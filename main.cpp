@@ -1,28 +1,36 @@
 #include <stdio.h>
 
 int func1(const int a, const int b) {
-  int ret = a + b;
+  int ret = 0;
+  ret += a * b;
+  ret += a - b;
   ret += a * b;
   ret += a - b;
   return ret;
 }
 
 int func2(const int m, const int n) {
-  int ret = m + n;
+  int ret = 0;
+  ret += m * n;
+  ret += m - n;
   ret += m * n;
   ret += m - n;
   return ret;
 }
 
 int func3(const double a, const double b) {
-  double ret = a - b;
+  double ret = 0.0;
+  ret += a * b;
+  ret += a + b;
   ret += a * b;
   ret += a + b;
   return (int)ret;
 }
 
 int func4(const int m, const int n) {
-  int ret = m + n;
+  int ret = 0;
+  ret += m * n;
+  ret += m - n;
   ret += m * n;
   ret += m - n;
   return ret;
