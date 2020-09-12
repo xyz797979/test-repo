@@ -21,6 +21,13 @@ int func3(const double a, const double b) {
   return (int)ret;
 }
 
+int func4(const int m, const int n) {
+  int ret = m + n;
+  ret += m * n;
+  ret += m - n;
+  return ret;
+}
+
 int main() {
   int x = 1;
   int y = 2;
@@ -28,6 +35,7 @@ int main() {
   printf("%d\n", func1(x, y));
   printf("%d\n", func2(x, y));
   printf("%d\n", func3(x, y));
+  printf("%d\n", func4(x, y));
 
   return 0;
 }
