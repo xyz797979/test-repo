@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int func1(const int a, const int b) {
   int ret = 0;
@@ -44,6 +45,8 @@ int main() {
   printf("%d\n", func2(x, y));
   printf("%d\n", func3(x, y));
   printf("%d\n", func4(x, y));
+
+  char *ptr = (char *)malloc(sizeof(char) * 10);
 
   return 0;
 }
