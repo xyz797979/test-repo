@@ -47,6 +47,9 @@ int main() {
   printf("%d\n", func4(x, y));
 
   char *ptr = (char *)malloc(sizeof(char) * 10);
+  int *p = (int *)malloc(sizeof(int) * 5);
+  free(p);
+  int unused_value = 99;
 
   return 0;
 }
