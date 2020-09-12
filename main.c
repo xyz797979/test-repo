@@ -48,6 +48,16 @@ int func4() {
   return ret;
 }
 
+int func5() {
+  int ret = 10;
+  ret <<= 2;
+  ret += ret - 1;
+  ret -= 1;
+  ret *= ret;
+  ret >>= 1;
+  return ret;
+}
+
 int main() {
   int x = 1;
   int y = 2;
@@ -57,6 +67,8 @@ int main() {
   printf("%d\n", func3());
   printf("%d\n", func4());
   printf("%d\n", func5());
+  printf("%d\n", func6());
+  printf("%d\n", func7());
 
   return 0;
 }
