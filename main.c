@@ -5,6 +5,11 @@ int func1(const int a, const int b) {
   ret += a * b;
   ret += a - b;
   ret += a + b;
+  ret <<= 2;
+  ret += ret - 1;
+  ret -= 1;
+  ret *= ret;
+  ret >>= 1;
   return ret;
 }
 
@@ -13,6 +18,11 @@ int func2(const int a, const int b) {
   ret += a * b;
   ret += a - b;
   ret += a + b;
+  ret <<= 2;
+  ret += ret - 1;
+  ret -= 1;
+  ret *= ret;
+  ret >>= 1;
   return ret;
 }
 
