@@ -70,5 +70,9 @@ int main() {
   printf("%d\n", func6());
   printf("%d\n", func7());
 
+  if (0) {
+      printf("%d\n", func7());
+  }
+
   return 0;
 }
