@@ -1,5 +1,3 @@
-#include "Func.h"
-
 #include <stdio.h>
 
 int func1(const int a, const int b) {
@@ -15,64 +13,11 @@ int func1(const int a, const int b) {
   return ret;
 }
 
-int func2(const int m, const int n) {
-  int ret = 0;
-  ret += m * n;
-  ret += m - n;
-  ret += m + n;
-  ret <<= 2;
-  ret += ret - 1;
-  ret -= 1;
-  ret *= ret;
-  ret >>= 1;
-  return ret;
-}
-
-int func3() {
-  int ret = 10;
-  ret <<= 2;
-  ret += ret - 1;
-  ret -= 1;
-  ret *= ret;
-  ret >>= 1;
-  return ret;
-}
-
-int func4() {
-  int ret = 10;
-  ret <<= 2;
-  ret += ret - 1;
-  ret -= 1;
-  ret *= ret;
-  ret >>= 1;
-  return ret;
-}
-
-int func5() {
-  int ret = 10;
-  ret <<= 2;
-  ret += ret - 1;
-  ret -= 1;
-  ret *= ret;
-  ret >>= 1;
-  return ret;
-}
-
 int main() {
   int x = 1;
   int y = 2;
 
   printf("%d\n", func1(x, y));
-  printf("%d\n", func2(x, y));
-  printf("%d\n", func3());
-  printf("%d\n", func4());
-  printf("%d\n", func5());
-  printf("%d\n", func6());
-  printf("%d\n", func7());
-
-  if (0) {
-      printf("%d\n", func7());
-  }
 
   return 0;
 }
